@@ -1,0 +1,29 @@
+syntax ="proto3";
+
+option java_package="eg.learn";
+
+
+
+service hello{
+	rpc message(APIRequest) returns (APIResponse);
+	
+	}
+
+
+
+
+
+
+
+message APIRequest{
+	string text = 1;
+
+}
+
+message APIResponse{
+	string textResponse= 1;
+	int32  responseCode = 2;
+
+
+
+}
